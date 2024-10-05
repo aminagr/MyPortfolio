@@ -1,0 +1,49 @@
+.ctaBackground {
+    background-color: black; /* Black background */
+    padding: 4rem; /* Increase internal padding for more space */
+    display: flex; /* Center the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.ctaContainer {
+    background: white; /* White background for the container */
+    color: black; /* Text color */
+    padding: 3rem; /* Increase padding inside the container */
+   
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    max-width: 800px; /* Increase max width for the container */
+    width: 100%; /* Make it responsive */
+    text-align: center; /* Center text */
+}
+
+.ctaTitle {
+    font-size: 2.5rem; /* Title size */
+    margin-bottom: 0.5rem; /* Space below title */
+}
+
+.ctaSubtitle {
+    font-size: 1.8rem; /* Subtitle size */
+    margin-bottom: 1rem; /* Space below subtitle */
+}
+
+.ctaText {
+    font-size: 1.1rem; /* Paragraph size */
+    margin-bottom: 2rem; /* Space below each paragraph */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.ctaButton {
+    background-color: #E26D5C; /* Button color */
+    color: white; /* Button text color */
+    padding: 0.8rem 2rem; /* Button padding */
+
+    font-size: 1.2rem; /* Button text size */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.ctaButton:hover {
+    background-color: #d2564d; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}

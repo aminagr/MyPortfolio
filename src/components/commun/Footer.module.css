@@ -1,30 +1,81 @@
-/* Footer.module.css */
-
 .footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
+    background-color: black; /* Black background for the footer */
+    color: white; /* White text for footer content */
+    padding: 2rem; /* Padding around footer */
+    text-align: center; /* Center text */
 }
 
-.footer a {
-    color: white;
+.logoContainer {
+    display: flex; /* Flexbox for logo */
+    justify-content: center; /* Center logo */
+    margin-bottom: 1rem; /* Space below logo */
+}
+
+.logo {
+    font-family: "Sacramento", cursive;
+    font-weight: 500;
+    font-size: 30px;
+    color: #E26D5C; /* Logo color */
     text-decoration: none;
-    margin: 0 1rem;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.footerContent {
+    display: flex; /* Flexbox for footer content */
+    justify-content: center; /* Center items */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
 
+.email {
+    margin-right: 2rem; /* Space between email and menu */
+}
+
+.menu {
+    display: flex; /* Flexbox for menu items */
+    margin-right: 2rem; /* Space between menu and icons */
+}
+
+.link {
+    color: white; /* Link color */
+    margin: 0 1rem; /* Space between links */
+    text-decoration: none; /* Remove underline */
+}
+
+.link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.socialIcons {
+    display: flex; /* Flexbox for social icons */
+}
+
+.icon {
+    font-size: 1.5rem; /* Size of social icons */
+    margin: 0 0.5rem; /* Space between icons */
+    color: white; /* Icon color */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.icon:hover {
+    color: #E26D5C; /* Change color on hover */
+}
+
+.copy {
+    font-size: 0.9rem; /* Size for copyright text */
+    background-color: #E26D5C; /* Pink background for copyright */
+    color: black; /* Black text for copyright */
+    padding: 1rem; /* Padding for the copyright section */
+    text-align: center; /* Center text */
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .footer {
-        padding: 1rem 0.5rem;
+    .footerContent {
+        flex-direction: column; /* Stack items vertically on small screens */
     }
 
-    .footer a {
-        display: block; /* Chaque lien sur une nouvelle ligne */
-        margin: 0.5rem 0;
+    .email, .menu {
+        margin-right: 0; /* Remove right margin on small screens */
+        margin-bottom: 1rem; /* Add space below each item */
     }
 }

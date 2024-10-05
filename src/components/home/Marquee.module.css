@@ -1,0 +1,25 @@
+.marqueeContainer {
+    background-color: black; /* Background color for contrast */
+    padding: 1rem; /* Padding for the container */
+    overflow: hidden; /* Hide overflow */
+   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.marquee {
+    display: inline-block; /* Inline block for smooth scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    animation: marquee 15s linear infinite; /* Animation properties */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); } /* Start off-screen right */
+    100% { transform: translateX(-100%); } /* End off-screen left */
+}
+
+.marquee span {
+    font-size: 1.5rem; /* Increase font size */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    letter-spacing: 1px; /* Slightly increase letter spacing */
+}
