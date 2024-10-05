@@ -1,0 +1,17 @@
+.contactContainer {
+    text-align: center; /* Center the text */
+    padding: 2rem; /* Add padding around the container */
+}
+
+.title {
+   
+    color: #E26D5C; /* Title color */
+    margin-bottom: 0.5rem; /* Space below title */
+}
+
+.subtitle {
+    font-size: 1.2rem; /* Subtitle size */
+    color: #555; /* Subtitle color */
+    margin-bottom: 2rem; /* Space below subtitle */
+    text-align: center;
+}

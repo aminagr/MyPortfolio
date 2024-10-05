@@ -1,0 +1,40 @@
+.languagesContainer {
+    padding: 2rem; /* Padding around the section */
+    max-width: 600px; /* Max width for the container */
+    margin: auto; /* Center the container */
+}
+
+.title {
+    font-size: 2rem; /* Title size */
+    color: #E26D5C; /* Title color */
+    text-align: center; /* Center title */
+    margin-bottom: 1.5rem; /* Space below title */
+}
+
+.progressContainer {
+    display: flex; /* Flex layout for the language line */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 1rem; /* Space between each language */
+}
+
+.languageName {
+    flex: 1; /* Allow language name to grow */
+    font-size: 1.1rem; /* Font size for language name */
+    color: #333; /* Text color */
+}
+
+.progressBar {
+    flex: 2; /* Allow progress bar to grow */
+    background-color: #ddd; /* Background for the progress bar */
+
+    overflow: hidden; /* Hide overflow for animation */
+    height: 20px; /* Height of the progress bar */
+    position: relative; /* Positioning for progress */
+}
+
+.progress {
+    height: 100%; /* Full height of the progress bar */
+    background-color: #E26D5C; /* Color of the progress */
+    width: 0; /* Start width at 0 */
+    transition: width 1s ease; /* Animation for width change */
+}

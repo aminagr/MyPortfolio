@@ -13,7 +13,7 @@ const projects = [
 
 const ProjectsGlobal = () => {
     return (
-        <p>projects</p>
+        <p></p>
     );
 };
 

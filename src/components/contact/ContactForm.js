@@ -1,4 +1,4 @@
-"use client"; // Indique que ce composant est un composant client
+"use client"; // Indicate that this component is a client component
 
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
@@ -36,33 +36,41 @@ const ContactForm = () => {
         }
     };
 
+    const imageSrc = '/images/contact.jpg'; // Path to the image
+
     return (
         <section className={styles.contactFormContainer}>
-            <h2 className={styles.contactFormTitle}>Contactez-moi</h2>
-            <form ref={formRef} className={styles.contactForm} onSubmit={handleSubmit}>
-                <input type="hidden" name="contact_number" value="697483" />
-                <div className={styles.formGroup}>
-                    <label htmlFor="user_name">Nom</label>
-                    <input type="text" name="user_name" required />
+            <div className={styles.formWrapper}>
+                <div className={styles.formSection}>
+                    <form ref={formRef} className={styles.contactForm} onSubmit={handleSubmit}>
+                        <input type="hidden" name="contact_number" value="697483" />
+                        <div className={styles.formGroup}>
+                            <label htmlFor="user_name">Nom</label>
+                            <input type="text" id="user_name" name="user_name" required />
+                        </div>
+                        <div className={styles.formGroup}>
+                            <label htmlFor="user_email">Email</label>
+                            <input type="email" id="user_email" name="user_email" required />
+                        </div>
+                        <div className={styles.formGroup}>
+                            <label htmlFor="subject">Objet</label>
+                            <input type="text" id="subject" name="subject" required />
+                        </div>
+                        <div className={styles.formGroup}>
+                            <label htmlFor="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" className={styles.btn} disabled={loading}>
+                            {loading ? 'Envoi...' : 'Envoyer'}
+                        </button>
+                    </form>
+                    {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
+                    {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
                 </div>
-                <div className={styles.formGroup}>
-                    <label htmlFor="user_email">Email</label>
-                    <input type="email" name="user_email" required />
+                <div className={styles.imageSection}>
+                    <img src={imageSrc} alt="Description de l'image" className={styles.image} />
                 </div>
-                <div className={styles.formGroup}>
-                    <label htmlFor="subject">Objet</label>
-                    <input type="text" name="subject" required />
-                </div>
-                <div className={styles.formGroup}>
-                    <label htmlFor="message">Message</label>
-                    <textarea name="message" required></textarea>
-                </div>
-                <button type="submit" className={styles.btn} disabled={loading}>
-                    {loading ? 'Envoi...' : 'Envoyer'}
-                </button>
-            </form>
-            {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
-            {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
+            </div>
         </section>
     );
 };
