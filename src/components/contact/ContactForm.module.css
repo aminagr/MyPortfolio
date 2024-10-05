@@ -1,0 +1,80 @@
+.contactFormContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactFormTitle {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #E26D5C;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.formGroup label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.formGroup input, 
+.formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formGroup textarea {
+    min-height: 100px; /* Hauteur minimale pour le textarea */
+}
+
+.formGroup input:focus, 
+.formGroup textarea:focus {
+    border-color: #E26D5C;
+    outline: none;
+}
+
+.btn {
+    padding: 0.8rem;
+    background-color: #E26D5C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #d2564d; /* Une nuance plus sombre au survol */
+}
+
+.successMessage {
+    color: green;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.errorMessage {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+}

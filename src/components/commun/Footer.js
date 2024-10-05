@@ -1,5 +1,5 @@
 "use client";
-import Link from 'next/link'; // Importer Link
+import Link from 'next/link'; 
 import styles from './Footer.module.css';
 
 const Footer = () => {
