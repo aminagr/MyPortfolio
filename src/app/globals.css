@@ -1,6 +1,13 @@
 /* globals.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poiret+One&family=Sacramento&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts after Tailwind */
+
+
 * {
   margin: 0;
   padding: 0;
