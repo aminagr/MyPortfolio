@@ -1,0 +1,30 @@
+/* Footer.module.css */
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem 0.5rem;
+    }
+
+    .footer a {
+        display: block; /* Chaque lien sur une nouvelle ligne */
+        margin: 0.5rem 0;
+    }
+}

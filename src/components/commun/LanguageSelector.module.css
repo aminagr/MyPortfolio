@@ -1,0 +1,13 @@
+.languageSelect {
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.languageSelect:hover {
+    color: #E26D5C; 
+}
