@@ -5,40 +5,22 @@ import { FaShoppingCart, FaDesktop, FaCog, FaLanguage, FaFileAlt, FaCheckCircle 
 const itemsServicesData = [
     {
         id: 1,
-        icon: <FaShoppingCart className="text-[#E26D5C] text-3xl mb-4" />,
-        title: 'Sites E-commerce',
-        description: 'Boostez vos ventes en ligne avec une boutique performante et sécurisée, offrant une expérience d\'achat fluide à vos clients.',
+        icon: <FaDesktop className="text-[#E26D5C] text-3xl mb-4" />,
+        title: 'Création de Sites Web',
+        description: 'Je crée des sites web modernes sur mesure qui reflètent votre identité et répondent à vos besoins, adaptés à tout type d’appareils tout en assurant performance et sécurité.',
     },
     {
         id: 2,
-        icon: <FaDesktop className="text-[#E26D5C] text-3xl mb-4" />,
-        title: 'Sites vitrines',
-        description: 'Mettez en avant votre entreprise avec un site vitrine moderne et élégant.',
+        icon: <FaLanguage className="text-[#E26D5C] text-3xl mb-4" />,
+        title: 'Traduction de sites et contenus',
+        description: 'Etant polyglotte qui parle 8 langues, j’assure la traduction  de vos sites web, applications, articles, documents et contenus pour toucher une audience internationale.',
     },
     {
         id: 3,
-        icon: <FaCog className="text-[#E26D5C] text-3xl mb-4" />,
-        title: 'Applications de gestion',
-        description: 'Optimisez, automatisez et simplifiez la gestion de votre entreprise.',
-    },
-    {
-        id: 4,
-        icon: <FaLanguage className="text-[#E26D5C] text-3xl mb-4" />,
-        title: 'Traduction',
-        description: 'Touchez une audience internationale avec mes services de traduction.',
-    },
-    {
-        id: 5,
         icon: <FaFileAlt className="text-[#E26D5C] text-3xl mb-4" />,
-        title: 'Rédaction',
-        description: 'Faites la différence avec du contenu percutant et engageant.',
-    },
-    {
-        id: 6,
-        icon: <FaCheckCircle className="text-[#E26D5C] text-3xl mb-4" />,
-        title: 'Relecture et Correction',
-        description: 'Assurez-vous d\'un contenu impeccable grâce à mon service de relecture.',
-    },
+        title: 'Rédaction de contenus et Optimisation SEO',
+        description: 'J’offre des services de rédaction de tout type de contenu et j améliore la visibilité de votre site sur les moteurs de recherche grâce à des techniques SEO avancées.',
+    }
 ];
 
 const ItemsServices = () => {

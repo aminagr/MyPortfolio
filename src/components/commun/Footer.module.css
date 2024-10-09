@@ -1,8 +1,9 @@
 .footer {
     background-color: black; /* Black background for the footer */
     color: white; /* White text for footer content */
-    padding: 2rem; /* Padding around footer */
+    padding: 3rem 2rem;/* Padding around footer */
     text-align: center; /* Center text */
+    
 }
 
 .logoContainer {
@@ -42,7 +43,7 @@
 }
 
 .link:hover {
-    text-decoration: underline; /* Underline on hover */
+    color: #E26D5C;
 }
 
 .socialIcons {
@@ -64,7 +65,7 @@
     font-size: 0.9rem; /* Size for copyright text */
     background-color: #E26D5C; /* Pink background for copyright */
     color: black; /* Black text for copyright */
-    padding: 1rem; /* Padding for the copyright section */
+    padding: 1.5rem; /* Padding for the copyright section */
     text-align: center; /* Center text */
 }
 

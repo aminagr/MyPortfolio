@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
             <footer className={styles.footer}>
                 <div className={styles.logoContainer}>
-                    <a href="#" className={styles.logo}>Amina Grine</a>
+                <Link href="/" className={styles.logo}>Amina Grine</Link>
                 </div>
                 <div className={styles.footerContent}>
                     <div className={styles.email}>aminagrine.pro@gmail.com</div>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <div className={styles.socialIcons}>
                         <a href="https://github.com" className={styles.icon}><FaGithub /></a>
                         <a href="https://linkedin.com" className={styles.icon}><FaLinkedin /></a>
-                        <a href="https://youtube.com" className={styles.icon}><FaYoutube /></a>
+                     
                     </div>
                 </div>
             </footer>

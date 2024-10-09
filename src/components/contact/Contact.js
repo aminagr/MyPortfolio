@@ -7,7 +7,7 @@ export default function Contact() {
         <div className={styles.contactContainer}>
             <h1 className={styles.title}>Contactez-moi</h1>
             <p className={styles.subtitle}>
-                Si vous êtes intéressés par l’un de mes services, contactez-moi pour un devis personnalisé!
+            Si vous êtes intéressés par l’un de mes services, contactez-moi pour en discuter !
             </p>
           
             <ContactForm />

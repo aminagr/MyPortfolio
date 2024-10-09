@@ -4,6 +4,7 @@
     align-items: center; /* Center vertically */
     padding: 2rem; /* Padding around the section */
     flex-wrap: wrap; /* Allow wrapping on small screens */
+ 
 }
 
 .textSection {

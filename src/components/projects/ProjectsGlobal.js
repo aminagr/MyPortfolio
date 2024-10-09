@@ -27,7 +27,7 @@ const projects = [
     },
     {
         title: 'TYNIRI : Marketplace d artisanat Algérien',
-        description: 'Tyniri est une marketplace de vente d’articles artisanaux Algériens où les artisans peuvent créer et gérer leur boutique, crée avec Wordpress.',
+        description: 'Tyniri est une marketplace de vente d’articles artisanaux Algériens où les artisans peuvent créer et gérer leur boutique, développée via WordPress, WooCommerce, WCFM Marketplace.',
         image: '/images/Tyniri/tyniri1.jpg',
         gallery: ['/images/Tyniri/tyniri1.jpg', '/images/Tyniri/tyniri2.jpg','/images/Tyniri/tyniri3 .jpg','/images/Tyniri/tyniri4.jpg','/images/Tyniri/tyniri6.jpg'],
       
