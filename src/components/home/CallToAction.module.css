@@ -1,6 +1,6 @@
 .ctaBackground {
-    background-color: black; /* Black background */
-    padding: 4rem; /* Increase internal padding for more space */
+    background: linear-gradient(to right, #E26D5C, #FFB6C1);    padding: 4rem; /* Increase internal padding for more space */
+    
     display: flex; /* Center the container */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
