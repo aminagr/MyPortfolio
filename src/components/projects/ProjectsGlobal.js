@@ -4,31 +4,30 @@ import React, { useState, useEffect } from 'react';
 import { FaExternalLinkAlt, FaGithub, FaTimes, FaGlobe, FaEye } from 'react-icons/fa';
 const projects = [
     {
-        title: 'Learn Algerian',
-        description: 'Une application Web dédiée à l apprentissage de la langue algerienne',
-        image: '/images/Hadaya1.png',
-        gallery: ['/images/Hadaya1.png', '/images/biblio1.jpg'],
-        github: 'https://github.com/project-one',
+        title: 'Application d’apprentissage du dialècte algérien',
+        description: 'Une application Web développée en ReactJS spécialisée en enseignement du dialecte algérien, elle contient des leçons interactives, des quiz et un dictionnaire multilingue, disponible en arabe,  français, anglais, espagnol, italien et russe. ',
+        image: '/images/learn1.png',
+        gallery: ['/images/learn1.png'],
+        github: 'https://github.com/aminagr/AlgerianDialect',
         website: 'https://learnalgerian.vercel.app',
     },
     {
         title: 'HADAYA : Boutique de cadeaux en ligne',
         description: 'Hadaya est un site E-commerce de vente de cadeaux developpé en Java EE en back-end et en HTML, CSS, Javascript et Bootstrap en front-end.',
         image: '/images/Hadaya1.png',
-        gallery: ['/images/Hadaya1.png', '/images/biblio1.jpg'],
+        gallery: ['/images/Hadaya1.png', '/images/Hadaya4.png','/images/Hadaya5.jpg','/images/Hadaya6.jpg','/images/Hadaya7.jpg','/images/Hadaya8.jpg','/images/Hadaya11.jpg'],
        
     },
     {
         title: 'TAKLIDI : PLATEFORME E-COMMERCE & E-LEARNING',
-        description: 'Taklidi est le design Web d’un site E-commerce de vente d’articles artisanaux Algériens ainsi qu’un site E-learning  d’apprentissage de création d’articles artisanaux réalisé sur Adobe Xd.',
+        description: 'Taklidi est le design d’un site E-commerce de vente d’articles artisanaux Algériens ainsi qu’un site E-learning d’apprentissage de création d’articles artisanaux réalisé sur Adobe Xd.',
         image: '/images/biblio1.jpg',
         gallery: ['/images/biblio1.jpg', '/images/biblio1.jpg'],
-        github: 'https://github.com/project-two',
-        website: 'https://example.com/project-two',
+        website: 'https://www.youtube.com/watch?v=VheCNxk_tNI',
     },
     {
         title: 'TYNIRI : Marketplace d artisanat Algérien',
-        description: 'Tyniri est une marketplace de vente d’articles artisanaux Algériens où les artisans peuvent créer et gérer leur boutique.',
+        description: 'Tyniri est une marketplace de vente d’articles artisanaux Algériens où les artisans peuvent créer et gérer leur boutique, crée avec Wordpress.',
         image: '/images/project3.jpg',
         gallery: ['/images/biblio1.jpg', '/images/biblio1.jpg'],
         // Pas de liens pour ce projet
@@ -42,17 +41,17 @@ const projects = [
     },
     {
         title: 'Plateforme de gestion d inventaire',
-        description: 'MyInventory est une application de bureau (Desktop) de gestion d’inventaire developpée en Java.',
+        description: 'MyInventory est une application Desktop de gestion d’inventaire developpée en Java.',
         image: '/images/project3.jpg',
         gallery: ['/images/biblio1.jpg', '/images/biblio1.jpg'],
-        // Pas de liens pour ce projet
+        github: 'https://github.com/aminagr/MyInventory',
     },
     {
         title: 'Mon portfolio',
-        description: 'Mon site personnel que vous etes entrain de visité',
+        description: 'Mon site personnel que vous etes entrain de visiter, developpé en React JS, Next JS, Tailwind CSS',
         image: '/images/project3.jpg',
         gallery: ['/images/biblio1.jpg', '/images/biblio1.jpg'],
-        // Pas de liens pour ce projet
+        github: 'https://github.com/aminagr/MyPortfolio',
     }
 ];
 
@@ -93,8 +92,8 @@ const ProjectsGlobal = () => {
     return (
         <section className="py-12 px-6 md:px-12 bg-white" id="projects">
             <div className="container mx-auto text-center">
-                <h2 className="text-4xl font-bold mb-6">Mes Projets</h2>
-                <p className="text-gray-600 mb-12">Découvrez certains de mes projets réalisés.</p>
+                <h2 className="text-4xl font-bold mb-6 ">Mes Projets</h2>
+                <p className="text-gray-600 mb-12 text-center">Découvrez certains de mes projets réalisés.</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
@@ -103,7 +102,7 @@ const ProjectsGlobal = () => {
                             className="bg-white shadow-lg overflow-hidden transform transition-all hover:scale-105 cursor-pointer"
                             onClick={() => openModal(project)}
                         >
-                            <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                            <img src={project.image} alt={project.title} className="w-full h-48 object-contain" />
                             <div className="p-6">
                                 <h3 className="text-xl font-extrabold mb-2">{project.title}</h3>
                                 <p className="text-gray-600 mb-4">{project.description}</p>
