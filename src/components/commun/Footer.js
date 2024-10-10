@@ -3,14 +3,16 @@ import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import styles from './Footer.module.css';
 
 const Footer = () => {
+    const email = process.env.NEXT_PUBLIC_EMAIL; 
+    const fname = process.env.NEXT_PUBLIC_FNAME; 
     return (
         <div>
             <footer className={styles.footer}>
                 <div className={styles.logoContainer}>
-                <Link href="/" className={styles.logo}>Amina Grine</Link>
+                <Link href="/" className={styles.logo}>{fname}</Link>
                 </div>
                 <div className={styles.footerContent}>
-                    <div className={styles.email}>aminagrine.pro@gmail.com</div>
+                    <div className={styles.email}>{email}</div>
                     <div className={styles.menu}>
                         <Link href="/" className={styles.link}>Accueil</Link>
                         <Link href="/projects" className={styles.link}>Projets</Link>
@@ -25,7 +27,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className={styles.copy}>
-                &copy; {new Date().getFullYear()} Amina. Tous droits réservés.
+                &copy; {new Date().getFullYear()} {fname} Tous droits réservés.
             </div>
         </div>
     );

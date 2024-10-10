@@ -1,7 +1,7 @@
-"use client"; // Add this directive to indicate a client component
+"use client"; 
 
 import React from 'react';
-import styles from './Marquee.module.css'; // Import the CSS module for styles
+import styles from './Marquee.module.css';
 
 const Marquee = () => {
     return (

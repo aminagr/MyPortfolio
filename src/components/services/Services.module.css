@@ -1,13 +1,12 @@
 .services {
-   padding :40px 100px;
+    padding: 40px 100px;
     background-color: #f9f9f9;
     text-align: center;
-    margin: 0; /* Retire toute marge par défaut */
-    width: 100%; /* Assure que la section prend toute la largeur */
-    position: relative; /* Nécessaire pour les ajustements */
-    left: 0; /* Assurez-vous que la section est alignée à gauche */
+    margin: 0;
+    width: 100%;
+    position: relative;
+    left: 0;
 }
-
 
 .title {
     font-size: 2.5rem;
@@ -53,13 +52,12 @@
 
 @media (max-width: 768px) {
     .servicesContainer {
-        grid-template-columns: 1fr; /* 1 colonne sur mobile */
-        width: 100%; /* Assurez-vous que le conteneur prend toute la largeur */
-        padding: 0 10px; /* Ajustez le padding latéral si nécessaire */
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 10px;
     }
 
     .serviceItem {
-        height: auto; /* Ajustez la hauteur si nécessaire, sinon laissez auto */
-     
+        height: auto;
     }
 }

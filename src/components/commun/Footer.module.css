@@ -1,45 +1,44 @@
 .footer {
-    background-color: black; /* Black background for the footer */
-    color: white; /* White text for footer content */
-    padding: 3rem 2rem;/* Padding around footer */
-    text-align: center; /* Center text */
-    
+    background-color: black;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
 }
 
 .logoContainer {
-    display: flex; /* Flexbox for logo */
-    justify-content: center; /* Center logo */
-    margin-bottom: 1rem; /* Space below logo */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .logo {
     font-family: "Sacramento", cursive;
     font-weight: 500;
     font-size: 30px;
-    color: #E26D5C; /* Logo color */
+    color: #E26D5C;
     text-decoration: none;
 }
 
 .footerContent {
-    display: flex; /* Flexbox for footer content */
-    justify-content: center; /* Center items */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .email {
-    margin-right: 2rem; /* Space between email and menu */
+    margin-right: 2rem;
 }
 
 .menu {
-    display: flex; /* Flexbox for menu items */
-    margin-right: 2rem; /* Space between menu and icons */
+    display: flex;
+    margin-right: 2rem;
 }
 
 .link {
-    color: white; /* Link color */
-    margin: 0 1rem; /* Space between links */
-    text-decoration: none; /* Remove underline */
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
 }
 
 .link:hover {
@@ -47,36 +46,35 @@
 }
 
 .socialIcons {
-    display: flex; /* Flexbox for social icons */
+    display: flex;
 }
 
 .icon {
-    font-size: 1.5rem; /* Size of social icons */
-    margin: 0 0.5rem; /* Space between icons */
-    color: white; /* Icon color */
-    transition: color 0.3s; /* Transition for hover effect */
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: white;
+    transition: color 0.3s;
 }
 
 .icon:hover {
-    color: #E26D5C; /* Change color on hover */
+    color: #E26D5C;
 }
 
 .copy {
-    font-size: 0.9rem; /* Size for copyright text */
-    background-color: #E26D5C; /* Pink background for copyright */
-    color: black; /* Black text for copyright */
-    padding: 1.5rem; /* Padding for the copyright section */
-    text-align: center; /* Center text */
+    font-size: 0.9rem;
+    background-color: #E26D5C;
+    color: black;
+    padding: 1.5rem;
+    text-align: center;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .footerContent {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column;
     }
 
     .email, .menu {
-        margin-right: 0; /* Remove right margin on small screens */
-        margin-bottom: 1rem; /* Add space below each item */
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
 }

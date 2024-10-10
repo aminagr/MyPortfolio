@@ -19,7 +19,7 @@
 .formSection {
     flex: 1;
    
-    animation: fadeIn 0.5s ease; /* Animation on load */
+    animation: fadeIn 0.5s ease; 
 }
 
 .imageSection {
@@ -46,7 +46,7 @@
 .formGroup label {
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: #333; /* Darker text for better readability */
+    color: #333; 
 }
 
 .formGroup input, 
@@ -120,7 +120,7 @@
 
 @media (max-width: 768px) {
     .imageSection {
-        display: none; /* Hide image on smaller screens */
+        display: none; 
     }
     .formWrapper{
         padding-right: 10px;

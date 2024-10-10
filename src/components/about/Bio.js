@@ -2,13 +2,15 @@ import React from 'react';
 import styles from './bio.module.css';
 
 const Bio = () => {
+    const name = process.env.NEXT_PUBLIC_NAME; 
+    const fname = process.env.NEXT_PUBLIC_FNAME; 
     return (
         <div className={styles.bioContainer}>
             <div className={styles.textSection}>
                 <h1 className={styles.title}>Je suis Amina</h1>
                 <h2 className={styles.subtitle}>Développeuse web & traductrice</h2>
                 <p className={styles.paragraph}>
-                    Je suis Amina, ingénieur en Technologies de l’information. Je suis titulaire d’une licence en systèmes informatiques et d’un master en technologies de l’information.
+                    Je suis {fname}, ingénieur en Technologies de l’information. Je suis titulaire d’une licence en systèmes informatiques et d’un master en technologies de l’information.
                 </p>
                 <p className={styles.paragraph}>
                     En tant que développeuse web full stack, je crée des sites web qui allient esthétique et fonctionnalité. Que ce soit pour des sites vitrines, des applications de gestion ou des plateformes e-commerce, je m’engage à produire des solutions innovantes et sur mesure.

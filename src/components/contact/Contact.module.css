@@ -1,18 +1,16 @@
 .contactContainer {
-    text-align: center; /* Center the text */
-    padding: 2rem; /* Add padding around the container */
+    text-align: center;
+    padding: 2rem;
 }
 
 .title {
-   
-    color: #E26D5C; /* Title color */
-    margin-bottom: 0.5rem; /* Space below title */
-font-weight: 500;
+    color: #E26D5C;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
 }
 
 .subtitle {
-   /* Subtitle size */
-    color: #848484; /* Subtitle color */
-    margin-bottom: 2rem; /* Space below subtitle */
+    color: #848484;
+    margin-bottom: 2rem;
     text-align: center;
 }

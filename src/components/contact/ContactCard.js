@@ -3,6 +3,8 @@ import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import styles from './ContactCard.module.css';
 
 const ContactCard = () => {
+    const email = process.env.NEXT_PUBLIC_EMAIL; 
+
     return (
         <div className={styles.cardsContainer}>
             <div className={styles.card}>
@@ -19,7 +21,7 @@ const ContactCard = () => {
                     <FaEnvelope className={styles.icon} />
                     <div>
                         <h3 className={styles.cardTitle}>Email</h3>
-                        <p className={styles.cardText}>aminagrine.pro@gmail.com</p>
+                        <p className={styles.cardText}>{email}</p>
                     </div>
                 </div>
             </div>

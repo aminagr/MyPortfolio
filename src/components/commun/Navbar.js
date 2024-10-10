@@ -7,6 +7,7 @@ import LanguageSelector from './LanguageSelector';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
+    const fname = process.env.NEXT_PUBLIC_FNAME; 
     const [menuActive, setMenuActive] = useState(false);
     const pathname = usePathname();
     const { language } = useAppContext(); 
@@ -17,9 +18,9 @@ const Navbar = () => {
 
     return (
         <nav className={styles.navbar}>
-            <Link href="/" className={styles.logo}>Amina Grine</Link>
+            <Link href="/" className={styles.logo}> {fname}</Link>
 
-            <LanguageSelector />
+          
             <div className={styles.hamburger} onClick={toggleMenu}>
                 {menuActive ? 'X' : '☰'}
             </div>

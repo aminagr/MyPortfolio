@@ -1,7 +1,7 @@
-"use client"; // Indicate a client component
+"use client";
 
 import React from 'react';
-import styles from './CallToAction.module.css'; // Import CSS module for styling
+import styles from './CallToAction.module.css'; 
 
 const CallToAction = () => {
     return (
