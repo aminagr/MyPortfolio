@@ -1,13 +1,16 @@
 "use client";
 import React from 'react';
-import ItemsServices from './ItemsServices'; // Assurez-vous que le chemin est correct
-import styles from './Services.module.css'; // Si vous avez un style spécifique pour le composant Services
+import ItemsServices from './ItemsServices'; 
+import MiniServices from './MiniServices'; 
+import styles from './Services.module.css'; 
 
 const Services = () => {
     return (
         <div className={styles.servicesWrapper}>
            
+           
             <ItemsServices />
+            <MiniServices/>
         </div>
     );
 };
