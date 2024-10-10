@@ -6,6 +6,9 @@
     margin-left: 1rem;
     cursor: pointer;
     transition: color 0.3s;
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .languageSelect:hover {

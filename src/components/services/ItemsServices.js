@@ -26,7 +26,7 @@ const itemsServicesData = [
 const ItemsServices = () => {
     return (
         <section className="py-12 bg-gradient-to-r from-[#E26D5C] to-[#FFB6C1]" id="services">
-            <h2 className="text-3xl font-bold text-center text-white mb-8">Mes Services</h2>
+            <h1 className=" font-bold text-center text-white mb-8">Mes Services</h1>
             <div className="max-w-screen-xl mx-auto px-4">
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Ajout d'un margin-top ici */}
                     {itemsServicesData.map(service => (

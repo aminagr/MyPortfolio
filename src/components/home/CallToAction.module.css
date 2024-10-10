@@ -1,50 +1,65 @@
 .ctaBackground {
     background: linear-gradient(to right, #E26D5C, #FFB6C1);  
-      padding: 4rem; /* Increase internal padding for more space */
-
-    display: flex; /* Center the container */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ctaContainer {
-    background: white; /* White background for the container */
-    color: black; /* Text color */
-    padding: 3rem; /* Increase padding inside the container */
-   
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    max-width: 800px; /* Increase max width for the container */
-    width: 100%; /* Make it responsive */
-    text-align: center; /* Center text */
+    background: white;
+    color: black;
+    padding: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
 }
 
 .ctaTitle {
-    font-size: 2.5rem; /* Title size */
-    margin-bottom: 0.5rem; /* Space below title */
+    margin-bottom: 0.5rem;
 }
 
 .ctaSubtitle {
-    font-size: 1.8rem; /* Subtitle size */
-    margin-bottom: 1rem; /* Space below subtitle */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 600;
+    color: #d2564d;
 }
 
 .ctaText {
-    font-size: 1.1rem; /* Paragraph size */
-    margin-bottom: 2rem; /* Space below each paragraph */
-    line-height: 1.6; /* Line height for readability */
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: center;
 }
 
 .ctaButton {
-    background-color: #E26D5C; /* Button color */
-    color: white; /* Button text color */
-    padding: 0.8rem 2rem; /* Button padding */
-
-    font-size: 1.2rem; /* Button text size */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+    background-color: #E26D5C;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .ctaButton:hover {
-    background-color: #d2564d; /* Darker shade on hover */
-    transform: translateY(-2px); /* Lift effect on hover */
+    background-color: black;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .ctaTitle{
+        font-size: 2.2rem;
+    }
+    .ctaSubtitle {
+        font-size: 1.5rem;
+    }
+    .ctaText {
+        font-size: 1rem;
+    }
+    .ctaButton {
+        font-size: 1rem;
+    }
 }

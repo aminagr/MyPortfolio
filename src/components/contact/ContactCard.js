@@ -9,8 +9,8 @@ const ContactCard = () => {
                 <div className={styles.cardContent}>
                     <FaMapMarkerAlt className={styles.icon} />
                     <div>
-                        <h3 className={styles.cardTitle}>Adresse</h3>
-                        <p className={styles.cardText}>123 Main St, City, Country</p>
+                        <h3 className={styles.cardTitle}>Localisation</h3>
+                        <p className={styles.cardText}>Alger, Algérie</p>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@ const ContactCard = () => {
                     <FaEnvelope className={styles.icon} />
                     <div>
                         <h3 className={styles.cardTitle}>Email</h3>
-                        <p className={styles.cardText}>contact@example.com</p>
+                        <p className={styles.cardText}>aminagrine.pro@gmail.com</p>
                     </div>
                 </div>
             </div>

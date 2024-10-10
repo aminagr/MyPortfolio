@@ -8,6 +8,7 @@ import Services from '../../components/services/Services';
 import ProjectGlobal from '../../components/projects/ProjectsGlobal';
 import Marquee from '../../components/home/Marquee';
 import CallToAction from '../../components/home/CallToAction';
+import Blog from '../../components/blog/Blog';
 export default function Home() {
   return (
     <div>
@@ -18,7 +19,7 @@ export default function Home() {
     <CallToAction/>
     <Contact/>
     <About/>
-    <Projects/>
+    <Blog/>
     </div>
   );
 }

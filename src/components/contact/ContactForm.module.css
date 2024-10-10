@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: stretch;
     margin: 2rem auto;
-    padding: 2rem;
+ 
 
    
 }
@@ -18,7 +18,7 @@
 
 .formSection {
     flex: 1;
-    padding: 2rem;
+   
     animation: fadeIn 0.5s ease; /* Animation on load */
 }
 
@@ -123,7 +123,9 @@
         display: none; /* Hide image on smaller screens */
     }
     .formWrapper{
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left:40px;
+        margin-right:40px;
     }
 }

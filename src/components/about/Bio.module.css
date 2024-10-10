@@ -1,64 +1,63 @@
 .bioContainer {
-    display: flex; /* Flex layout for the section */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding: 2rem; /* Padding around the section */
-    flex-wrap: wrap; /* Allow wrapping on small screens */
- 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 
 .textSection {
-    flex: 1; /* Allow text section to grow */
-    max-width: 600px; /* Max width for the text */
-    margin-right: 2rem; /* Space to the right of the text */
+    flex: 1;
+    max-width: 600px;
+    margin-right: 2rem;
 }
 
 .imageSection {
-    flex: 1; /* Allow image section to grow */
-    max-width: 300px; /* Max width for the image */
+    flex: 1;
+    max-width: 300px;
 }
 
 .image {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    border: none; /* Remove border if any */
-    box-shadow: none; /* Remove any shadow */
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
 }
 
 .title {
-    font-size: 2rem; /* Title size */
-    color: #E26D5C; /* Title color */
-    margin-bottom: 0.5rem; /* Space below title */
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
     text-align: justify;
+   
 }
 
 .subtitle {
-    font-size: 1.5rem; /* Subtitle size */
-    color: #555; /* Subtitle color */
-    margin-bottom: 1rem; /* Space below subtitle */
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1rem;
     text-align: justify;
 }
 
 .paragraph {
-    font-size: 1rem; /* Paragraph size */
-    color: #333; /* Text color */
-    line-height: 1.6; /* Line height for readability */
-    margin-bottom: 1rem; /* Space below each paragraph */
+    font-size: 1.2rem; 
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .bioContainer {
-        flex-direction: column; /* Stack text and image on small screens */
-        align-items: center; /* Center align content */
+        flex-direction: column;
+        align-items: center;
     }
 
     .textSection {
-        margin-right: 0; /* Remove right margin on small screens */
-        text-align: center; /* Center text on small screens */
+        margin-right: 0;
+        text-align: center;
     }
 
     .imageSection {
-        margin-top: 1rem; /* Add space above image */
+        margin-top: 1rem;
     }
 }

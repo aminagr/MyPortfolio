@@ -80,9 +80,9 @@ const ProjectsGlobal = () => {
     };
 
     return (
-        <section className="py-12 px-6 md:px-12 bg-white" id="projects">
+        <section className="py-12 px-6 md:px-24 bg-white" id="projects">
             <div className="container mx-auto text-center">
-                <h2 className="text-4xl font-bold mb-6 ">Mes Projets</h2>
+                <h1 className=" font-bold mb-6 text-[#E26D5C]">Mes Projets</h1>
                 <p className="text-gray-600 mb-12 text-center">Découvrez certains de mes projets réalisés.</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -94,7 +94,7 @@ const ProjectsGlobal = () => {
                         >
                             <img src={project.image} alt={project.title} className="w-full h-48 object-contain" />
                             <div className="p-6">
-                                <h3 className="text-xl font-extrabold mb-2">{project.title}</h3>
+                                <h3 className="text-xl font-extrabold mb-2 ">{project.title}</h3>
                                 <p className="text-gray-600 mb-4">{project.description}</p>
                                 <div className="flex justify-center space-x-4">
                                     <button onClick={(e) => { e.stopPropagation(); openModal(project); }} className="text-gray-600 hover:text-[#E26D5C] transition duration-300">

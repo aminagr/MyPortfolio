@@ -1,4 +1,4 @@
-"use client"; // Indicate that this component is a client component
+"use client"; 
 
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
@@ -36,7 +36,7 @@ const ContactForm = () => {
         }
     };
 
-    const imageSrc = '/images/contact.jpg'; // Path to the image
+    const imageSrc = '/images/contact.jpg'; 
 
     return (
         <section className={styles.contactFormContainer}>
@@ -68,7 +68,7 @@ const ContactForm = () => {
                     {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
                 </div>
                 <div className={styles.imageSection}>
-                    <img src={imageSrc} alt="Description de l'image" className={styles.image} />
+                    <img src={imageSrc} alt="Contact" className={styles.image} />
                 </div>
             </div>
         </section>

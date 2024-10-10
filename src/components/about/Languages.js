@@ -27,7 +27,8 @@ const Languages = () => {
 
     return (
         <div className={styles.languagesContainer}>
-            <h2 className={styles.title}>Langues que je parle</h2>
+            <h1 className={styles.title}>Les langues que je parle</h1>
+            <p className={styles.intro}>Apprendre de nouvelles langues est pour moi une véritable aventure, me permettant de découvrir de nouvelles cultures et de communiquer avec des personnes du monde entier. Découvrez les 8 langues que je parle !</p>
             {languages.map((lang, index) => (
                 <div key={lang.name} className={styles.progressContainer}>
                     <span className={styles.languageName}>{lang.name}</span>

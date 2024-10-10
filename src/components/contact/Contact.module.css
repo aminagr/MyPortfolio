@@ -7,11 +7,12 @@
    
     color: #E26D5C; /* Title color */
     margin-bottom: 0.5rem; /* Space below title */
+font-weight: 500;
 }
 
 .subtitle {
-    font-size: 1.2rem; /* Subtitle size */
-    color: #555; /* Subtitle color */
+   /* Subtitle size */
+    color: #848484; /* Subtitle color */
     margin-bottom: 2rem; /* Space below subtitle */
     text-align: center;
 }
