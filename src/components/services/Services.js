@@ -10,7 +10,7 @@ const Services = () => {
            
            
             <ItemsServices />
-            <MiniServices/>
+     
         </div>
     );
 };

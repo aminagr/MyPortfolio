@@ -7,6 +7,7 @@ const Footer = () => {
     const fname = process.env.NEXT_PUBLIC_FNAME; 
     return (
         <div>
+            <br/>
             <footer className={styles.footer}>
                 <div className={styles.logoContainer}>
                 <Link href="/" className={styles.logo}>{fname}</Link>

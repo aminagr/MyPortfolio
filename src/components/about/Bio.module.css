@@ -1,20 +1,24 @@
 .bioContainer {
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     flex-wrap: wrap;
+
+
 }
 
 .textSection {
     flex: 1;
     max-width: 600px;
     margin-right: 2rem;
+ 
 }
 
 .imageSection {
     flex: 1;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .image {

@@ -11,7 +11,7 @@ const Hero = () => {
         <section className={styles.hero}>
             <div className={styles.leftColumn}>
                 <h1 className={styles.title}>L'Art du Web et des Mots</h1>
-                <h2 className={styles.subtitle}>Avec {name}</h2>
+                <h2 className={styles.subtitle}>Avec {name} :) </h2>
                 <p className={styles.description}>
                     Bonjour ! Je suis {fname}, Ingénieur IT, développeuse web et traductrice multilingue. 
                     Je combine technologie et expertise linguistique pour offrir des solutions qui transcendent 

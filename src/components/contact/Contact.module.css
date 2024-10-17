@@ -4,7 +4,9 @@
 }
 
 .title {
-    color: #E26D5C;
+    color: white;
+
+padding: 20px 0;
     margin-bottom: 0.5rem;
     font-weight: 500;
 }

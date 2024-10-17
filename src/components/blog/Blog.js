@@ -38,9 +38,11 @@ export default function Blog() {
       },
     ];
     return (
-        <div className="container mx-auto px-8 md:px-24">
-            <h1 className="text-5xl text-center mb-6" style={{ color: '#E26D5C' }}>Mon Blog</h1>
-            <p className="text-gray-600 mb-6" style={{ color: '#848484', textAlign: 'center' }}>
+      <div>
+<h1 className="text-5xl text-center mb-6" style={{ color: 'white', background: 'linear-gradient(to right, #E26D5C, #FFB6C1)', padding:'25px 0' }}>Mon Blog</h1>
+<div className="container mx-auto px-8 md:px-24">
+
+<p className="text-gray-600 mb-6" style={{ color: '#848484', textAlign: 'center' }}>
                 Découvrez mes articles exclusifs que vous ne trouverez nulle part ailleurs. Explorez mes cours de langues et des contenus enrichissants sur les nouvelles technologies rédigés avec passion pour vous offrir une perspective nouvelle et authentique. Bonne lecture !
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -56,6 +58,7 @@ export default function Blog() {
                 ))}
             </div>
             <br/>
+        </div>
         </div>
     );
     

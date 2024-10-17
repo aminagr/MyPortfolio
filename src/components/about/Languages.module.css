@@ -2,13 +2,16 @@
     padding: 2rem;
     max-width: 800px;
     margin: auto;
+    
 }
 
 .title {
-    color: #E26D5C;
+    color: white;
     text-align: center;
     margin-bottom: 0.5rem;
     font-weight: 500;
+    background: linear-gradient(to right, #E26D5C, #FFB6C1);
+    padding : 20px 0;
 }
 
 .intro{

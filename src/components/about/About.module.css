@@ -1,5 +1,7 @@
 .title {
-    color: #E26D5C; 
+    color: white;
+   padding: 20px 0;
     margin-bottom: 0.5rem; 
 font-weight: 500;
+background: linear-gradient(to right, #E26D5C, #FFB6C1);
 }
