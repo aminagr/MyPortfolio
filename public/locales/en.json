@@ -1,0 +1,113 @@
+{
+    "services": [
+      {
+        "title": "E-commerce Sites",
+        "description": "Boost your online sales with a high-performing and secure store, providing a smooth shopping experience for your customers."
+      },
+      {
+        "title": "Showcase Sites",
+        "description": "Highlight your business with a modern and elegant showcase site."
+      },
+      {
+        "title": "Portfolio Sites",
+        "description": "Present your projects and skills with a captivating digital portfolio."
+      },
+      {
+        "title": "Management Applications",
+        "description": "Optimize, automate, and simplify your business management with custom applications."
+      }
+    ],
+    "itemsServices": [
+      {
+        "title": "Website Creation",
+        "description": "I create custom modern websites that reflect your identity and meet your needs, adapted to all types of devices while ensuring performance and security."
+      },
+      {
+        "title": "Translation of sites and content",
+        "description": "As a polyglot speaking 8 languages, I ensure the translation of your websites, applications, articles, documents, and content to reach an international audience."
+      },
+      {
+        "title": "Content Writing and SEO Optimization",
+        "description": "I offer writing services for all types of content and improve your site’s visibility on search engines with advanced SEO techniques."
+      }
+    ],
+    "projects": [
+      {
+        "title": "Algerian Dialect Learning Application",
+        "description": "A web application developed in ReactJS specializing in teaching the Algerian dialect. It includes interactive lessons, quizzes, and a multilingual dictionary."
+      },
+      {
+        "title": "HADAYA: Online Gift Shop",
+        "description": "Hadaya is an e-commerce site for selling gifts developed in Java EE for the back-end and in HTML, CSS, JavaScript, and Bootstrap for the front-end."
+      },
+      {
+        "title": "TAKLIDI: E-COMMERCE & E-LEARNING PLATFORM",
+        "description": "Taklidi is the study and design of a marketplace for selling Algerian artisanal products as well as a learning site for creating artisanal products."
+      },
+      {
+        "title": "TYNIRI: Algerian Handicraft Marketplace",
+        "description": "Tyniri is the realization of 'Taklidi', a marketplace for selling Algerian artisanal products."
+      },
+      {
+        "title": "Online Library Management Platform",
+        "description": "This library book management platform is developed in Java EE, HTML, CSS, JavaScript, and Bootstrap."
+      },
+      {
+        "title": "Inventory Management Platform",
+        "description": "MyInventory is a desktop application for inventory management developed in Java."
+      },
+      {
+        "title": "My Personal Website",
+        "description": "My personal website that you are currently visiting is developed in React JS, Next JS, and Tailwind CSS."
+      }
+    ],
+    "hero": {
+      "title": "The Art of Web and Words",
+      "subtitle": "With {name} :)",
+      "description": "Hello! I am {fname}, an IT engineer, web developer, and multilingual translator. I combine technology and linguistic expertise to offer solutions that transcend borders. From developing modern websites to translation and content writing, discover my services and see how I can help you achieve your goals."
+    },
+    "callToAction": {
+      "title": "Do you need a website?",
+      "subtitle": "I'll create your own site now!",
+      "text": "Whether you're a small artisan, an artist, or a business, a website offers you unprecedented visibility. Create an online site, showcase your products, services, and connect with your customers more effectively.",
+      "button": "Contact me"
+    },
+    "contact": {
+      "title": "Contact me",
+      "subtitle": "If you're interested in any of my services, contact me to discuss!",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "sendButton": "Send",
+        "loading": "Sending...",
+        "success": "Email sent successfully!",
+        "error": "An error occurred. Please try again."
+      }
+    },
+    "footer": {
+      "email": "Email",
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About",
+      "contact": "Contact",
+      "rights": "All rights reserved."
+    },
+    "blog": {
+      "title": "My Blog",
+      "intro": "Discover my exclusive articles that you won’t find anywhere else. Explore my language courses and enriching content on new technologies, written with passion to offer you a new and authentic perspective. Happy reading!"
+    },
+    "languages": {
+      "title": "Languages I Speak",
+      "intro": "Learning new languages is a real adventure for me, allowing me to discover new cultures and communicate with people around the world."
+    },
+    "navbar": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About",
+      "contact": "Contact",
+      "blog": "Blog"
+    }
+  }
+  

@@ -1,0 +1,113 @@
+{
+    "services": [
+      {
+        "title": "Sites E-commerce",
+        "description": "Boostez vos ventes en ligne avec une boutique performante et sécurisée, offrant une expérience d'achat fluide à vos clients."
+      },
+      {
+        "title": "Sites vitrines",
+        "description": "Mettez en avant votre entreprise avec un site vitrine moderne et élégant."
+      },
+      {
+        "title": "Sites portfolio",
+        "description": "Présentez vos projets et compétences avec un portfolio numérique captivant."
+      },
+      {
+        "title": "Applications de gestion",
+        "description": "Optimisez, automatisez et simplifiez la gestion de votre entreprise avec des applications sur mesure."
+      }
+    ],
+    "itemsServices": [
+      {
+        "title": "Création de Sites Web",
+        "description": "Je crée des sites web modernes sur mesure qui reflètent votre identité et répondent à vos besoins, adaptés à tout type d’appareils tout en assurant performance et sécurité."
+      },
+      {
+        "title": "Traduction de sites et contenus",
+        "description": "Etant polyglotte qui parle 8 langues, j’assure la traduction de vos sites web, applications, articles, documents et contenus pour toucher une audience internationale."
+      },
+      {
+        "title": "Rédaction de contenus et Optimisation SEO",
+        "description": "J’offre des services de rédaction de tout type de contenu et j’améliore la visibilité de votre site sur les moteurs de recherche grâce à des techniques SEO avancées."
+      }
+    ],
+    "projects": [
+      {
+        "title": "Application d’apprentissage du dialecte algérien",
+        "description": "Une application Web développée en ReactJS spécialisée en enseignement du dialecte algérien. Elle contient des leçons interactives, des quiz et un dictionnaire multilingue."
+      },
+      {
+        "title": "HADAYA : Boutique de cadeaux en ligne",
+        "description": "Hadaya est un site E-commerce de vente de cadeaux développé en Java EE en back-end et en HTML, CSS, Javascript et Bootstrap en front-end."
+      },
+      {
+        "title": "TAKLIDI : PLATEFORME E-COMMERCE & E-LEARNING",
+        "description": "Taklidi est l'étude et le design d’une marketplace de vente d’articles artisanaux algériens ainsi que d'un site d’apprentissage de création d’articles artisanaux."
+      },
+      {
+        "title": "TYNIRI : Marketplace d'artisanat Algérien",
+        "description": "Tyniri est la concrétisation de 'Taklidi', soit une marketplace de vente d’articles artisanaux algériens."
+      },
+      {
+        "title": "Plateforme de gestion de bibliothèque en ligne",
+        "description": "Cette plateforme de gestion de livres de bibliothèque est développée en Java EE, HTML, CSS, Javascript et Bootstrap."
+      },
+      {
+        "title": "Plateforme de gestion d'inventaire",
+        "description": "MyInventory est une application Desktop de gestion d’inventaire développée en Java."
+      },
+      {
+        "title": "Mon site personnel",
+        "description": "Mon site personnel que vous êtes en train de visiter est développé en React JS, Next JS et Tailwind CSS."
+      }
+    ],
+    "hero": {
+      "title": "L'Art du Web et des Mots",
+      "subtitle": "Avec {name} :)",
+      "description": "Bonjour ! Je suis {fname}, Ingénieur IT, développeuse web et traductrice multilingue. Je combine technologie et expertise linguistique pour offrir des solutions qui transcendent les frontières. Du développement de sites web modernes à la traduction et la rédaction de contenus, découvrez mes services et voyez comment je peux vous aider à atteindre vos objectifs."
+    },
+    "callToAction": {
+      "title": "Vous avez besoin d'un site Web ?",
+      "subtitle": "Je créerai votre propre site maintenant !",
+      "text": "Que vous soyez un petit artisan, un artiste ou une entreprise, un site web vous offre une visibilité sans précédent. Créez un site en ligne, présentez vos produits, vos services, et connectez-vous avec vos clients de manière plus efficace.",
+      "button": "Contactez-moi"
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "subtitle": "Si vous êtes intéressés par l’un de mes services, contactez-moi pour en discuter !",
+      "form": {
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Objet",
+        "message": "Message",
+        "sendButton": "Envoyer",
+        "loading": "Envoi...",
+        "success": "Email envoyé avec succès !",
+        "error": "Une erreur est survenue. Veuillez réessayer."
+      }
+    },
+    "footer": {
+      "email": "Email",
+      "home": "Accueil",
+      "projects": "Projets",
+      "about": "À propos",
+      "contact": "Contact",
+      "rights": "Tous droits réservés."
+    },
+    "blog": {
+      "title": "Mon Blog",
+      "intro": "Découvrez mes articles exclusifs que vous ne trouverez nulle part ailleurs. Explorez mes cours de langues et des contenus enrichissants sur les nouvelles technologies rédigés avec passion pour vous offrir une perspective nouvelle et authentique. Bonne lecture !"
+    },
+    "languages": {
+      "title": "Les langues que je parle",
+      "intro": "Apprendre de nouvelles langues est pour moi une véritable aventure, me permettant de découvrir de nouvelles cultures et de communiquer avec des personnes du monde entier."
+    },
+    "navbar": {
+      "home": "Accueil",
+      "projects": "Projets",
+      "about": "À propos",
+      "contact": "Contact",
+      "blog": "Blog"
+    }
+  }
+  

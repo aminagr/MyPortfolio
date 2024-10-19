@@ -1,20 +1,24 @@
+"use client"; // Ensure this is a client component
+
 import React from 'react';
-import { useAppContext } from '../../app/context/AppContext';
-import styles from './LanguageSelector.module.css'; 
+import { useLanguage } from '../../app/context/LanguageContext'; 
+import { useRouter } from 'next/navigation'; 
 
 const LanguageSelector = () => {
-  const { language, setLanguage } = useAppContext();
+    const { lang, changeLanguage } = useLanguage();
+    const router = useRouter();
 
-  return (
-    <select 
-      className={styles.languageSelect} 
-      value={language} 
-      onChange={(e) => setLanguage(e.target.value)}
-    >
-      <option value="en">🇬🇧 English</option>
-      <option value="fr">🇫🇷 Français</option>
-    </select>
-  );
+    const handleChange = (e) => {
+        const newLang = e.target.value;
+        changeLanguage(newLang); // This now uses the updated function
+    };
+
+    return (
+        <select value={lang} onChange={handleChange} style={{ backgroundColor: 'white' }}>
+            <option value="en">🇬🇧 English</option>
+            <option value="fr">🇫🇷 Français</option>
+        </select>
+    );
 };
 
 export default LanguageSelector;

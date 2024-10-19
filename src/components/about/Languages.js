@@ -1,20 +1,11 @@
-"use client";
+"use client"; // Ensure this is a client component
 
 import React, { useEffect, useRef } from 'react';
+import { useLanguage } from '../../app/context/LanguageContext'; // Import the useLanguage hook
 import styles from './Languages.module.css';
 
-const languages = [
-    { name: 'Arabe', level: 100 },
-    { name: 'Français', level: 90 },
-    { name: 'Anglais', level: 80 },
-    { name: 'Espagnol', level: 70 },
-    { name: 'Italien', level: 50 },
-    { name: 'Russe', level: 40 },
-    { name: 'Turc', level: 20 },
-    { name: 'Chinois', level: 5 },
-];
-
 const Languages = () => {
+    const { currentTranslations } = useLanguage(); // Get current translations
     const progressRefs = useRef([]);
 
     useEffect(() => {
@@ -25,24 +16,29 @@ const Languages = () => {
         });
     }, []);
 
+    // Define language levels
+    const languages = currentTranslations.languages.languagesList.map((name, index) => ({
+        name: name,
+        level: index === 0 ? 100 : index === 1 ? 90 : index === 2 ? 80 : index === 3 ? 70 : index === 4 ? 50 : index === 5 ? 40 : index === 6 ? 20 : 5 // Adjust levels as needed
+    }));
+
     return (
-            <div>
-                 <h1 className={styles.title}>Les langues que je parle</h1>
-        <div className={styles.languagesContainer}>
-           
-            <p className={styles.intro}>Apprendre de nouvelles langues est pour moi une véritable aventure, me permettant de découvrir de nouvelles cultures et de communiquer avec des personnes du monde entier. Découvrez les 8 langues que je parle !</p>
-            {languages.map((lang, index) => (
-                <div key={lang.name} className={styles.progressContainer}>
-                    <span className={styles.languageName}>{lang.name}</span>
-                    <div className={styles.progressBar}>
-                        <div
-                            className={styles.progress}
-                            ref={(el) => (progressRefs.current[index] = el)}
-                        />
+        <div>
+            <h1 className={styles.title}>{currentTranslations.languages.title}</h1>
+            <div className={styles.languagesContainer}>
+                <p className={styles.intro}>{currentTranslations.languages.intro}</p>
+                {languages.map((lang) => (
+                    <div key={lang.name} className={styles.progressContainer}>
+                        <span className={styles.languageName}>{lang.name}</span>
+                        <div className={styles.progressBar}>
+                            <div
+                                className={styles.progress}
+                                ref={(el) => (progressRefs.current[languages.indexOf(lang)] = el)}
+                            />
+                        </div>
                     </div>
-                </div>
-            ))}
-        </div>
+                ))}
+            </div>
         </div>
     );
 };

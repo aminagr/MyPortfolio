@@ -1,20 +1,14 @@
+// src/app/layout.js
+"use client"; 
 import './globals.css';
-import { AppProvider } from '../app/context/AppContext';
-import Navbar from '../components/commun/Navbar';
-import Footer from '../components/commun/Footer';
+import { LanguageProvider } from './context/LanguageContext';
 
-export default function Layout({ children }) {
+export default function RootLayout({ children }) {
     return (
-        <html lang="en">
-            <body>
-                <AppProvider>
-                    <div className='container'>
-                        <Navbar />
-                        <main>{children}</main>
-                        <Footer />
-                    </div>
-                </AppProvider>
-            </body>
-        </html>
+        <LanguageProvider>
+            <html>
+                <body>{children}</body>
+            </html>
+        </LanguageProvider>
     );
 }

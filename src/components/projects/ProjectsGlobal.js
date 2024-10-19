@@ -1,59 +1,11 @@
 "use client";
 import React, { useState } from 'react';
 import { FaGithub, FaTimes, FaGlobe, FaEye } from 'react-icons/fa';
+import { useLanguage } from '../../app/context/LanguageContext'; // Importer le contexte
 
 const ProjectsGlobal = () => {
-    const projects = [
-        
-        {
-            title: process.env.NEXT_PUBLIC_PROJECT2_TITLE,
-            description: process.env.NEXT_PUBLIC_PROJECT2_DESCRIPTION,
-            image: process.env.NEXT_PUBLIC_PROJECT2_IMAGE,
-            gallery: process.env.NEXT_PUBLIC_PROJECT2_GALLERY.split(','),
-        },
-        {
-            title: process.env.NEXT_PUBLIC_PROJECT1_TITLE,
-            description: process.env.NEXT_PUBLIC_PROJECT1_DESCRIPTION,
-            image: process.env.NEXT_PUBLIC_PROJECT1_IMAGE,
-            gallery: process.env.NEXT_PUBLIC_PROJECT1_GALLERY.split(','),
-            github: process.env.NEXT_PUBLIC_PROJECT1_GITHUB,
-            website: process.env.NEXT_PUBLIC_PROJECT1_WEBSITE,
-        },
-        {
-            title: process.env.NEXT_PUBLIC_PROJECT3_TITLE,
-            description: process.env.NEXT_PUBLIC_PROJECT3_DESCRIPTION,
-            image: process.env.NEXT_PUBLIC_PROJECT3_IMAGE,
-            gallery: process.env.NEXT_PUBLIC_PROJECT3_GALLERY.split(','),
-            website: process.env.NEXT_PUBLIC_PROJECT3_WEBSITE,
-        },
-        {
-            title: process.env.NEXT_PUBLIC_PROJECT4_TITLE,
-            description: process.env.NEXT_PUBLIC_PROJECT4_DESCRIPTION,
-            image: process.env.NEXT_PUBLIC_PROJECT4_IMAGE,
-            gallery: process.env.NEXT_PUBLIC_PROJECT4_GALLERY.split(','),
-        },
-        {
-            title: process.env.NEXT_PUBLIC_PROJECT5_TITLE,
-            description: process.env.NEXT_PUBLIC_PROJECT5_DESCRIPTION,
-            image: process.env.NEXT_PUBLIC_PROJECT5_IMAGE,
-            gallery: process.env.NEXT_PUBLIC_PROJECT5_GALLERY.split(','),
-        },
-        {
-            title: process.env.NEXT_PUBLIC_PROJECT6_TITLE,
-            description: process.env.NEXT_PUBLIC_PROJECT6_DESCRIPTION,
-            image: process.env.NEXT_PUBLIC_PROJECT6_IMAGE,
-            gallery: process.env.NEXT_PUBLIC_PROJECT6_GALLERY.split(','),
-            github: process.env.NEXT_PUBLIC_PROJECT6_GITHUB,
-        },
-        {
-            title: process.env.NEXT_PUBLIC_PROJECT7_TITLE,
-            description: process.env.NEXT_PUBLIC_PROJECT7_DESCRIPTION,
-            image: process.env.NEXT_PUBLIC_PROJECT7_IMAGE,
-            gallery: process.env.NEXT_PUBLIC_PROJECT7_GALLERY.split(','),
-            github: process.env.NEXT_PUBLIC_PROJECT7_GITHUB,
-            website: process.env.NEXT_PUBLIC_PROJECT7_WEBSITE,
-        },
-    ];
+    const { currentTranslations } = useLanguage(); // Récupérer les traductions
+    const projects = currentTranslations.projects || []; // Accéder aux projets
 
     const [isOpen, setIsOpen] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
@@ -81,8 +33,8 @@ const ProjectsGlobal = () => {
     return (
         <section className="py-12 px-6 md:px-24 bg-white" id="projects">
             <div className="container mx-auto text-center">
-                <h1 className="font-bold mb-6 text-[#E26D5C]">Mes Projets</h1>
-                <p className="text-gray-600 mb-12 text-center">Découvrez certains de mes projets réalisés.</p>
+                <h1 className="font-bold mb-6 text-[#E26D5C]">{currentTranslations.titleProjects}</h1>
+                <p className="text-gray-600 mb-12 text-center">{currentTranslations.subprojects}</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
