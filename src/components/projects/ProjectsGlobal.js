@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from 'react';
 import { FaGithub, FaTimes, FaGlobe, FaEye } from 'react-icons/fa';
-import { useLanguage } from '../../app/context/LanguageContext'; // Importer le contexte
+import { useLanguage } from '../../app/context/LanguageContext';
 
 const ProjectsGlobal = () => {
-    const { currentTranslations } = useLanguage(); // Récupérer les traductions
-    const projects = currentTranslations.projects || []; // Accéder aux projets
+    const { currentTranslations } = useLanguage(); 
+    const projects = currentTranslations.projects || []; 
 
     const [isOpen, setIsOpen] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);

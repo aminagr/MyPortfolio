@@ -1,5 +1,4 @@
-"use client"; // Ensure this is a client component
-
+"use client"; 
 import React from 'react';
 import { useLanguage } from '../../app/context/LanguageContext'; 
 import { useRouter } from 'next/navigation'; 
@@ -10,7 +9,7 @@ const LanguageSelector = () => {
 
     const handleChange = (e) => {
         const newLang = e.target.value;
-        changeLanguage(newLang); // This now uses the updated function
+        changeLanguage(newLang); 
     };
 
     return (

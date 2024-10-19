@@ -1,12 +1,12 @@
 import Link from 'next/link'; 
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
 import styles from './Footer.module.css';
-import translations from '../../data/translations'; // Assurez-vous que ce chemin est correct
+import translations from '../../data/translations'; 
 
-const Footer = ({ lang }) => { // Ajoutez lang en tant que prop
+const Footer = ({ lang }) => { 
     const email = process.env.NEXT_PUBLIC_EMAIL; 
     const fname = process.env.NEXT_PUBLIC_FNAME; 
-    const currentTranslations = translations[lang] || translations['en']; // Obtenez les traductions selon la langue
+    const currentTranslations = translations[lang] || translations['en']; 
 
     return (
         <div>

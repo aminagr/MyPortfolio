@@ -5,7 +5,7 @@ import { useLanguage } from '../../app/context/LanguageContext';
 const MiniServices = () => {
     const { currentTranslations } = useLanguage();
     const services = currentTranslations.services;
-    const subheader = currentTranslations.subheader; // Récupérer le sous-titre
+    const subheader = currentTranslations.subheader; 
 
     const icons = [
         <FaStore className="w-10 h-10 text-blue-500" />,
@@ -17,7 +17,7 @@ const MiniServices = () => {
     return (
         <div>
             <br />
-            <p className="text-gray-600 mb-12 text-center text-lg">{subheader}</p> {/* Utiliser le sous-titre */}
+            <p className="text-gray-600 mb-12 text-center text-lg">{subheader}</p> 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4 md:px-24 py-1">
                 {services.map((service, index) => (
                     <div key={index} className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center transition-transform transform hover:scale-105">

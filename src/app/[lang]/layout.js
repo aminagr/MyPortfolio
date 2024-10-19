@@ -1,24 +1,23 @@
 
 
 //src/app/[lang]/layout.js
-"use client"; // Make sure this is a client component
+"use client"; 
 
 import { usePathname } from 'next/navigation';
 import Navbar from '../../components/commun/Navbar';
-import Footer from '../../components/commun/Footer'; // Importer le composant Footer
-
+import Footer from '../../components/commun/Footer'; 
+import { useLanguage } from '../../app/context/LanguageContext';
 export default function Layout({ children }) {
     const pathname = usePathname();
-    const lang = pathname.split('/')[1] || 'en'; // Extract language from the path
+    const lang = pathname.split('/')[1] || 'en'; // Vérifiez que vous récupérez bien la langue
 
     return (
         <div className='container'>
             <Navbar lang={lang} />
-         
             <main>
-                {children} {/* Render the content from page.js */}
+                {children} 
             </main>
-            <Footer lang={lang} /> {/* Ajouter le Footer ici */}
+            <Footer lang={lang} /> 
         </div>
     );
 }

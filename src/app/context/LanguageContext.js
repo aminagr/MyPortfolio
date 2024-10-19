@@ -1,12 +1,14 @@
-"use client";
+// src/app/context/LanguageContext.js
+"use client"; 
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation'; // Import useRouter
+import { useRouter } from 'next/navigation'; 
 import translations from '../../data/translations';
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-    const router = useRouter(); // Get the router
+    const router = useRouter(); 
     const [lang, setLang] = useState('en');
 
     useEffect(() => {
@@ -19,15 +21,21 @@ export const LanguageProvider = ({ children }) => {
             setLang(defaultLang);
             localStorage.setItem('lang', defaultLang);
         }
+        
+        // Vérifiez l'URL et définissez la langue si nécessaire
+        const pathLang = window.location.pathname.split('/')[1];
+        if (pathLang === 'fr' || pathLang === 'en') {
+            setLang(pathLang);
+            localStorage.setItem('lang', pathLang);
+        }
     }, []);
 
     const changeLanguage = (newLang) => {
         setLang(newLang);
         localStorage.setItem('lang', newLang);
         
-        // Navigate to the new language route without reloading
-        const currentPath = window.location.pathname.split('/').slice(2).join('/'); // Get current path after language
-        router.push(`/${newLang}/${currentPath}`); // Use router.push
+        const currentPath = window.location.pathname.split('/').slice(2).join('/');
+        router.push(`/${newLang}/${currentPath}`); 
     };
 
     const currentTranslations = translations[lang] || translations['en'];
